@@ -47,16 +47,16 @@ public class UserInterface {
 
             } else if (brugerValg == 2) {
                 if (controller.hentSuperhelt().size() == 0)
-                    System.out.println("Der er ingen personer i databasen");
+                    System.out.println("Der er ingen Helte i databasen");
                 else {
-                    System.out.println("Personer i database");
+                    System.out.println("Helte i database");
                     for (Superhelt superhelt : controller.hentSuperhelt()) {
                         System.out.println(superhelt);
                     }
                 }
             } else if (brugerValg == 3) {
                 String find;
-                System.out.println("Which superhero are you looking for? ");
+                System.out.println("Hvilken superhelt søger du efter? ");
                 find = keyboard.nextLine();
                 controller.findSuperhelte(find);
 
@@ -82,7 +82,7 @@ public class UserInterface {
                     superheltDerSkalRedigeres = søgeResultat.get(0);
                 }
                 if (superheltDerSkalRedigeres != null) {
-                    System.out.println("Rediger personinformation. Tryk ENTER hvis information ikke skal redigeres. ");
+                    System.out.println("Rediger Superhelte. Tryk ENTER hvis information ikke skal redigeres. ");
                     String nyVærdi;
                     System.out.println("Navn: " + superheltDerSkalRedigeres.getNavn());
                     nyVærdi = keyboard.nextLine();
