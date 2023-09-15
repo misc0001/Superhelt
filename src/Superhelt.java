@@ -53,6 +53,10 @@ public class Superhelt {
         this.superkraft = superkraft;
     }
 
+    public void setErMenneske(String erMenneske) {
+        this.erMenneske = erMenneske;
+    }
+
     public void setDebutÅr(int debutÅr) {
         this.debutÅr = debutÅr;
     }
