@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e682a6e3-713d-44ca-907a-b5b5e4aeadeb" name="Changes" comment="nu med userinterface">
+    <list default="true" id="e682a6e3-713d-44ca-907a-b5b5e4aeadeb" name="Changes" comment="nu kan man redigere">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Superhelt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Superhelt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
     </list>
@@ -54,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694710415678</updated>
-      <workItem from="1694710416690" duration="20455000" />
+      <workItem from="1694710416690" duration="33186000" />
     </task>
     <task id="LOCAL-00001" summary="nu med userinterface">
       <option name="closed" value="true" />
@@ -72,7 +74,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694725101557</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="nu med userinterface">
+      <option name="closed" value="true" />
+      <created>1694808746088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694808746088</updated>
+    </task>
+    <task id="LOCAL-00004" summary="nu kan man redigere">
+      <option name="closed" value="true" />
+      <created>1694809014704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694809014704</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nu med userinterface" />
-    <option name="LAST_COMMIT_MESSAGE" value="nu med userinterface" />
+    <MESSAGE value="nu kan man redigere" />
+    <option name="LAST_COMMIT_MESSAGE" value="nu kan man redigere" />
   </component>
 </project>

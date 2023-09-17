@@ -18,4 +18,5 @@ public class Controller {
         public Superhelt findSuperhelte(String navn) {
             return database.søgSuperhelte(navn);
         }
+
 }

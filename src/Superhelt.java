@@ -68,17 +68,17 @@ public class Superhelt {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Navn: ");
+        stringBuilder.append(" Navn: ");
         stringBuilder.append(navn);
-        stringBuilder.append("Superhelte Navn: ");
+        stringBuilder.append(" Superhelte Navn: ");
         stringBuilder.append(superhelteNavn);
-        stringBuilder.append("Superkraft: ");
+        stringBuilder.append(" Superkraft: ");
         stringBuilder.append(superkraft);
-        stringBuilder.append("Menneske: ");
+        stringBuilder.append(" Menneske: ");
         stringBuilder.append(erMenneske);
-        stringBuilder.append("Årstal: ");
+        stringBuilder.append(" Årstal: ");
         stringBuilder.append(debutÅr);
-        stringBuilder.append("Styrke: ");
+        stringBuilder.append(" Styrke: ");
         stringBuilder.append(styrke);
 
         return stringBuilder.toString();

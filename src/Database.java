@@ -11,12 +11,10 @@ public class Database {
         return superhelte;
     }
 
-    public Superhelt søgSuperhelte(String navn){
+    public Superhelt søgSuperhelte(String navn) {
         for (Superhelt superhelt : superhelte) {
             if (superhelt.getNavn().contains(navn) || (superhelt.getSuperhelteNavn().contains(navn))) {
-                System.out.println(superhelt);
-            }
-        }
-        return null;
+                System.out.println(superhelt);}
+        } return null;
     }
 }
