@@ -1,21 +1,21 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class UserInterface {
+    String navn;
+    String superhelteNavn;
+    String superKraft;
+    String erMenneske;
+    int debutÅr;
+    int styrke;
     public void startProgram() {
         Database database = new Database();
         Controller controller = new Controller(database);
-
-        int brugerValg = 0;
-        String navn;
-        String superhelteNavn;
-        String superKraft;
-        String erMenneske;
-        int debutÅr;
-        int styrke;
         Scanner keyboard = new Scanner(System.in);
+        int brugerValg = 0;
 
-        while (brugerValg != 9) {
+        do {
             System.out.println("""                
                     1. Opret superhelt
                     2. Vis superhelte
@@ -23,9 +23,14 @@ public class UserInterface {
                     4. Rediger superhelt
                     9. Afslut
                     """);
-            brugerValg = keyboard.nextInt();
-
-                if (brugerValg == 1) {
+            try {
+                brugerValg = keyboard.nextInt();
+            } catch(InputMismatchException ime){
+                System.out.println("Du skal skrive et tal");
+            }
+            keyboard.nextLine();
+                switch (brugerValg) {
+                    case 1:
                     System.out.println("Din helts civile navn: ");
                     navn = keyboard.next();
 
@@ -44,8 +49,10 @@ public class UserInterface {
                     System.out.println("Hvor stærk er din helt?: ");
                     styrke = keyboard.nextInt();
                     controller.tilføjSuperhelt(navn, superhelteNavn, superKraft, erMenneske, debutÅr, styrke);
+                    break;
 
-                } else if (brugerValg == 2) {
+                    case 2:
+
                     if (controller.hentSuperhelt().size() == 0)
                         System.out.println("Der er ingen Helte i databasen");
                     else {
@@ -54,14 +61,16 @@ public class UserInterface {
                             System.out.println(superhelt);
                         }
                     }
-                } else if (brugerValg == 3) {
+                    break;
+
+                    case 3:
 
                     System.out.println("Hvilken superhelt søger du efter? ");
                     String find = keyboard.nextLine();
                     controller.findSuperhelte(find);
+                    break;
 
-                } else if (brugerValg == 4) {
-                    String brugerInput = keyboard.nextLine();
+                    case 4:
 
                     ArrayList<Superhelt> søgeResultat = database.hentSuperhelt();
                     Superhelt superheltDerSkalRedigeres = null;
@@ -116,12 +125,17 @@ public class UserInterface {
                         }
                         System.out.println(superheltDerSkalRedigeres + "er blivet opdateret ");
                     }
-                } else if (brugerValg == 9) {
+                    break;
+
+                    case 9:
                     System.out.println("Slukker systemet! ");
                     System.exit(0);
+
+                    default:
+                        System.out.println("Prøv igen ");
                 }
 
-        }
+        } while (brugerValg != 9);
 
     }
 }
