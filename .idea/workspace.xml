@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e682a6e3-713d-44ca-907a-b5b5e4aeadeb" name="Changes" comment="nu kan man redigere">
-      <change afterPath="$PROJECT_DIR$/Test/DatabaseTest.java" afterDir="false" />
+    <list default="true" id="e682a6e3-713d-44ca-907a-b5b5e4aeadeb" name="Changes" comment="Har ikke helt forstået unit test...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Superhelt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Superhelt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/DatabaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseTest.tilføjSuperhelt">
+  <component name="RunManager" selected="JUnit.DatabaseTest.søgSuperhelte">
     <configuration name="DatabaseTest.søgSuperhelte" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Superhelt" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DatabaseTest.tilføjSuperhelt" />
         <item itemvalue="JUnit.DatabaseTest.søgSuperhelte" />
+        <item itemvalue="JUnit.DatabaseTest.tilføjSuperhelt" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694710415678</updated>
       <workItem from="1694710416690" duration="34155000" />
-      <workItem from="1695027798505" duration="10337000" />
+      <workItem from="1695027798505" duration="16410000" />
     </task>
     <task id="LOCAL-00001" summary="nu med userinterface">
       <option name="closed" value="true" />
@@ -144,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694979787339</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Har ikke helt forstået unit test...">
+      <option name="closed" value="true" />
+      <created>1695062084643</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695062084643</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nu med userinterface" />
     <MESSAGE value="nu kan man redigere" />
-    <option name="LAST_COMMIT_MESSAGE" value="nu kan man redigere" />
+    <MESSAGE value="Har ikke helt forstået unit test..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Har ikke helt forstået unit test..." />
   </component>
 </project>

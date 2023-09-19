@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Controller {
 
         private Database database;
-        private ArrayList<Superhelt> superhelte = new ArrayList<>();
 
 
         public Controller(Database database) {
