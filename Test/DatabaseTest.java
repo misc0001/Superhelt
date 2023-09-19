@@ -41,4 +41,12 @@ class DatabaseTest {
         assertTrue(true);
 
     }
+
+    @Test
+    void sletSuperhelt() {
+        String superhelteNavn = "Batman";
+        database.sletSuperhelt(superhelteNavn);
+        Superhelt fundet = database.søgSuperhelte(superhelteNavn);
+        assertNull(fundet);
+    }
 }

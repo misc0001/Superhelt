@@ -15,9 +15,25 @@ public class Database {
     public Superhelt søgSuperhelte(String navn) {
         for (Superhelt superhelt : superhelte) {
             if (superhelt.getNavn().contains(navn) || (superhelt.getSuperhelteNavn().contains(navn))) {
-                System.out.println(superhelt);}
-        } return null;
+                System.out.println(superhelt);
+            }
+        }
+        return null;
     }
+
+    public void sletSuperhelt(String superhelteNavn) {
+        Superhelt fundet = null;
+        for (Superhelt superhelt:superhelte) {
+            if (superhelt.getSuperhelteNavn().contains(superhelteNavn));
+            fundet = superhelt;
+            break;
+        }
+        if(fundet != null) {
+            superhelte.remove(fundet);
+        }
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

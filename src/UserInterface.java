@@ -13,6 +13,11 @@ public class UserInterface {
         Database database = new Database();
         Controller controller = new Controller(database);
         Scanner keyboard = new Scanner(System.in);
+
+        //controller.tilføjSuperhelt("Bruce Wayne", "Batman", "Utility belt", "ja", 1939, 100);
+        //controller.tilføjSuperhelt("Clark Kent", "Superman", "Superstyrke", "nej", 1938, 1000);
+        //controller.tilføjSuperhelt("Diana Prince", "Wonderwoman", "Lasso of truth", "nej", 1941, 500);
+
         int brugerValg = 0;
 
         do {
@@ -21,6 +26,7 @@ public class UserInterface {
                     2. Vis superhelte
                     3. Find superhelt
                     4. Rediger superhelt
+                    5. Slet superhelt
                     9. Afslut
                     """);
             try {
@@ -126,6 +132,13 @@ public class UserInterface {
                         System.out.println(superheltDerSkalRedigeres + "er blivet opdateret ");
                     }
                     break;
+
+                    case 5:
+                        System.out.println("navn");
+                        superhelteNavn = keyboard.nextLine();
+                        controller.sletSuperhelt(superhelteNavn);
+                        System.out.println("helt er nu slettet");
+                        break;
 
                     case 9:
                     System.out.println("Slukker systemet! ");
