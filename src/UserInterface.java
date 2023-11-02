@@ -14,10 +14,6 @@ public class UserInterface {
         Controller controller = new Controller(database);
         Scanner keyboard = new Scanner(System.in);
 
-        //controller.tilføjSuperhelt("Bruce Wayne", "Batman", "Utility belt", "ja", 1939, 100);
-        //controller.tilføjSuperhelt("Clark Kent", "Superman", "Superstyrke", "nej", 1938, 1000);
-        //controller.tilføjSuperhelt("Diana Prince", "Wonderwoman", "Lasso of truth", "nej", 1941, 500);
-
         int brugerValg = 0;
 
         do {
@@ -32,19 +28,20 @@ public class UserInterface {
             try {
                 brugerValg = keyboard.nextInt();
             } catch(InputMismatchException ime){
+                ime.printStackTrace();
                 System.out.println("Du skal skrive et tal");
             }
             keyboard.nextLine();
                 switch (brugerValg) {
                     case 1:
                     System.out.println("Din helts civile navn: ");
-                    navn = keyboard.next();
+                    navn = keyboard.nextLine();
 
                     System.out.println("Din helts hemmelige identitet: ");
-                    superhelteNavn = keyboard.next();
+                    superhelteNavn = keyboard.nextLine();
 
                     System.out.println("hvad er din helts superkrafter?: ");
-                    superKraft = keyboard.next();
+                    superKraft = keyboard.nextLine();
 
                     System.out.println("Er din helt menneske?: ");
                     erMenneske = keyboard.next();
